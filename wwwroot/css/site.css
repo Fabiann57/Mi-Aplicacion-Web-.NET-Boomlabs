@@ -1,0 +1,47 @@
+﻿.piedepagina {
+  color:white!important;
+  width: 100%;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+#azulito{
+  color:#b3d7ff!important;
+}
+#blanquito{
+  color:white!important;
+}
+
+.gris{
+  color:gray!important;
+}
+
+#BarraDeNavegacion img {
+  width: 6rem;
+}
+
+#main{
+  min-height: 74vh;
+  background-color: rgb(80, 79, 79);
+}
+
+.carousel-inner img{
+ max-height: 74vh;
+ object-fit:contain;
+}
+
+#colUno {
+  background-color: rgb(100, 100, 100);
+  margin-right: 1rem;
+}
+
+#colDos {
+  margin-left: 1rem;
+}
+
+#anclasColor a{
+  color:white!important;
+}
+
+#carouselExampleIndicators{
+  color:white;
+}

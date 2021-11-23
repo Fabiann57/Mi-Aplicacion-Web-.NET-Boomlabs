@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repara Ya! App - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/stylestheme.css" />
+    <link rel="icon" href="~/favicon.ico">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <nav style="background-color:black;" class="fixed-top navbar navbar-expand-lg navbar-light" id="mainNav">
+        <a class="navbar-brand js-scroll-trigger" asp-controller="Home" asp-action="Index"><img
+                src="~/assets/img/logoblanco.jpg" width="60" height="60" class="d-inline-block align-top"
+                alt="" />Repara Ya! App</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-area="" asp-controller="Home"
+                        asp-action="Index">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-area="" asp-controller="Home"
+                        asp-action="Privacy">Privacidad</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-area=""
+                        asp-controller="QuieroAdquirirUnServicio" asp-action="Index">Quiero adquirir un servicio</a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-area=""
+                        asp-controller="QuieroOfrecerMisServicios" asp-action="Index">Quiero ofrecer mis servicio</a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-area="" asp-controller="Auth"
+                        asp-action="Login">Ingresar</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main role="main">
+        @model MyApp.Models.Usuario
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container d-flex h-75 align-items-center">
+                <div class="mx-auto text-center">
+                    <strong class="mx-auto my-0 text-uppercase text-white-50 text  bg-black">
+                        Ingresa tus credenciales de acceso:
+                    </strong>
+                    <strong class="mx-auto my-0 text-uppercase text-white-50 text blanquito">
+                        @using (Html.BeginForm())
+                        {
+                            @Html.LabelFor(u => u.Email, "Correo electrónico")
+                            @Html.TextBoxFor(u => u.Email, new { type = "email" })
+                            <br />
+                            @Html.LabelFor(u => u.Contraseña, "Contraseña")
+                            @Html.PasswordFor(u => u.Contraseña)
+                            <br />
+                            <button>Ingresar</button>
+                        }
+                        <br />
+                    </strong>
+                    @TempData["mensaje"]
+                </div>
+            </div>
+        </header>
+    </main>
+    <footer class="footer bg-black small text-center text-white-50">
+        <!-- Contact-->
+        <div class="social d-flex justify-content-center">
+            <a class="mx-5" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a class="mx-5" href="#!"><i class="fab fa-facebook-f"></i></a>
+            <a class="mx-5" href="#!"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="container">Copyright © 2020 - MyApp - <a asp-area="" asp-controller="Home"
+                asp-action="Privacy">Privacy</a></div>
+        <p class="text-center">Visita Tambien Nuestra Tienda Virtual <a href="https://myinterventas.com">My
+                Interventas.com</a></p>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/scriptsnav.js"></script>
+</body>
+
+</html>

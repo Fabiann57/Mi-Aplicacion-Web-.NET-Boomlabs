@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repara Ya! App</title>
+    <link rel="stylesheet" href="~/css/stylestheme.css" />
+    <link rel="icon" href="~/favicon.ico">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <nav style="background-color:black;" class="fixed-top navbar navbar-expand-lg navbar-light" id="mainNav">
+        <a class="navbar-brand js-scroll-trigger" asp-controller="Home" asp-action="Index"><img
+                src="~/logoblanco.jpg" width="60" height="60" class="d-inline-block align-top"
+                alt="" />Repara Ya! App</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-area="" asp-controller="Home"
+                        asp-action="Index">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-area="" asp-controller="Home"
+                        asp-action="Privacy">Privacidad</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-area=""
+                        asp-controller="QuieroAdquirirUnServicio" asp-action="Index">Quiero adquirir un servicio</a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-area=""
+                        asp-controller="QuieroOfrecerMisServicios" asp-action="Index">Quiero ofrecer mis servicio</a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-area="" asp-controller="Auth"
+                        asp-action="Login">Ingresar</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main role="main">
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Repara Ya! App</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Disfruta del mejor servicio tecnico y de mantenimiento
+                        con los mas altos estandares de calidad que estabas esperando.</h2>
+                    <a class="btn btn-primary js-scroll-trigger" asp-controller="Login" asp-action="Index">vamos</a>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-white mb-4">Repara Ya! App</h2>
+                        <p class="text-white-50">
+                            Somos un emprendimiento que busca apoyar a pequeñas y medianas empresas que ofrecen sus
+                            servicios de mantenimiento en hogares, y asi consolidarse en el mercado como los nùmero uno
+                            en la industria de repaciòn.
+                        </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="~/logograndered.png" alt="" />
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-dark" id="projects">
+            <div class="container">
+                <!-- Featured Project Row-->
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-lg-6"><img class="img-fluid"
+                            src="~/Mantenimiento Preventivo de computadores.jpg" alt="" /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Mantenimiento de equipos moviles y de computo</h4>
+                                    <p class="mb-0 text-white-50">Mantenimiento y reparcion de telefonos y computadoras
+                                        a su servicio</p>
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6"><img class="img-fluid"
+                            src="~/Reparacion-y-mantenimiento-de-lavadoras-y-secadoras-en-Medellin-550c.jpg"
+                            alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Reparacion de Electrodomesticos</h4>
+                                    <p class="mb-0 text-white-50">Mantenimiento y reparcion de electrodomesticos a su
+                                        servicio</p>
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-lg-6"><img class="img-fluid"
+                            src="~/mantenimiento_electrico_proactivo_1.jpg" alt="" /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Mantenimiento de Maquinaria y Equipo</h4>
+                                    <p class="mb-0 text-white-50">Mantenimiento de maquinaria para su empresa.</p>
+                                    <hr class="d-none d-lg-block mb-0 mr-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Subscribe para adquirir un servicio</h2>
+                        <form class="form-inline d-flex">
+                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email"
+                                placeholder="Enter email address..." />
+                            <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer bg-black small text-center text-white-50">
+        <!-- Contact-->
+        <div class="social d-flex justify-content-center">
+            <a class="mx-5" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a class="mx-5" href="#!"><i class="fab fa-facebook-f"></i></a>
+            <a class="mx-5" href="#!"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="container">Copyright © 2020 - MyApp - <a asp-area="" asp-controller="Home"
+                asp-action="Privacy">Privacy</a></div>
+        <p class="text-center">Visita Tambien Nuestra Tienda Virtual <a href="https://myinterventas.com">My
+                Interventas.com</a></p>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/scriptsnav.js"></script>
+</body>
+
+</html>

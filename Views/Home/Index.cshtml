@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center">
+    <small>
+        <h4 id="blanquito">Esto fue lo que aprendimos en el</h4>
+    </small>
+    <h1 id="blanquito" class="display-4">Fastrack Boomlabs</h1>
+</div>
+<div class="container">
+    <div class="row align-items-center text-center">
+        <div id="colUno" class="col align-items-center text-center">
+            <h2><strong id="azulito">Selecciona una plataforma: </strong></h2>
+        </div>
+        <div id="colDos" class="col align-items-center text-center">
+            <div id="anclasColor" class="row m-2"><a asp-area="" asp-controller="C" asp-action="Index">1- <button
+                        type="button" class="btn btn-primary">C</button></a></div>
+            <div id="anclasColor" class="row m-2"><a asp-area="" asp-controller="CSharp" asp-action="Index">2- <button
+                        type="button" class="btn btn-secondary">C#</button></a></div>
+            <div id="anclasColor" class="row m-2"><a asp-area="" asp-controller="Minecraft" asp-action="Index">3-
+                    <button type="button" class="btn btn-success">Minecraft</button></a></div>
+            <div id="anclasColor" class="row m-2"><a asp-area="" asp-controller="AspNet" asp-action="Index">4- <button
+                        type="button" class="btn btn-dark">Asp.Net</button></a></div>
+        </div>
+    </div>
+</div>
